@@ -1,0 +1,13 @@
+.main .main-tit{
+   padding: 4rem 2rem;
+    font-size: 2.2rem;
+    line-height: 1.4;
+    text-align: center;
+    color:var(--c-black);
+}
+.main-tit p{
+  margin-top: 1rem;
+  color: var(--c-bold-gray);
+  font-size: 1.4rem;
+  font-weight: normal;
+}

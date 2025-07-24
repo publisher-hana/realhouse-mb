@@ -1,9 +1,7 @@
-.container-wrap{
-  padding-top: var(--header-h);
-}
 .container{
-  max-width:var(--cont-width);
-  margin:40px auto 80px;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .container.w-full{
   max-width: initial;
@@ -137,4 +135,13 @@
   background-color: var(--c-emerald);
   color: #fff;
   box-sizing: border-box
+}
+
+.card {
+    flex: 1;
+    min-width: 100%;
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem
 }
