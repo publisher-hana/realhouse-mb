@@ -1,0 +1,175 @@
+
+.more-content {
+  padding: 16px;
+}
+
+/* 사용자 정보 섹션 */
+.user-info-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 16px;
+  margin-bottom: 12px;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.user-email {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+/* 공통 섹션 스타일 */
+.management-section,
+.points-section,
+.inquiry-section,
+.notices-section {
+  border:1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px 16px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.count-badge {
+  background: #ff5050;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 16px;
+  text-align: center;
+}
+
+.section-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+.section-link {
+  background: none;
+  border: none;
+  color: #2281FF;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
+
+/* 포인트 섹션 */
+.points-title {
+  color: #ff5050;
+}
+
+.points-balance {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2281FF;
+}
+
+.points-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.points-link {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.points-link:hover {
+  color: #2281FF;
+}
+
+.divider {
+  width: 1px;
+  height: 16px;
+  background: #e5e5e5;
+}
+
+/* 공지사항 섹션 */
+.more-link {
+  background: none;
+  border: none;
+  color: #2281FF;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+}
+
+.more-link:hover {
+  text-decoration: underline;
+}
+
+.notices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notice-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+}
+
+.notice-title {
+  font-size: 14px;
+  color: #333;
+  flex: 1;
+  margin-right: 8px;
+}
+
+.notice-date {
+  font-size: 12px;
+  color: #999;
+  margin-left: auto;
+}
+
+.new-badge {
+  background: #ff5050;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 4px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+

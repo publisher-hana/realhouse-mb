@@ -1,0 +1,32 @@
+.pop-items{
+  position: fixed;
+  height: 30%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 100px;
+  background-color: #fff;
+  border-top: 1px solid var(--border-color);
+  z-index: 100;
+  transition: height 1s ease;
+ 
+}
+.pop-items.expanded {
+  height: calc(100% - 46px); /* 확장 시 높이 증가 */
+  box-sizing: border-box;
+  padding-bottom: 0;
+}
+
+.pop-items button{
+  width: 100%;
+  padding: 0 20px;
+  height: 46px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+.pop-items .items-wrap{
+  overflow-y: scroll;
+  height: 100%;
+}

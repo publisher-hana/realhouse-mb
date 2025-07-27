@@ -1,4 +1,28 @@
+.header{
+  position: relative;
+  height: 46px;
+  background-color: var(--c-emerald);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .back{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  top:50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
 .bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -7,7 +31,16 @@
   padding: 8px 0;
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.03);
   font-family: 'Noto Sans KR', sans-serif;
+  z-index: 1000;
+  box-sizing: border-box;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  &.hidden{
+    display: none;
+  }
 }
+
+
 
 .nav-item {
   display: flex;
@@ -18,19 +51,33 @@
   font-size: 12px;
   position: relative;
   padding: 4px 6px;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  flex: 1;
+  min-width: 0;
 }
 
 .nav-item .icon {
   font-size: 20px;
-  margin-bottom: 2px;
+  background-repeat: no-repeat;
+  width: 4.5rem;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  position: relative;
+  &.home{
+    display: flex;
+  }
 }
 
 .nav-item.active,
 .nav-item:hover {
-  color: #111;
+  color: #2281FF;
   font-weight: 500;
 }
+
+
 
 .badge-container {
   position: relative;
@@ -39,12 +86,17 @@
 .badge {
   position: absolute;
   top: -4px;
-  right: -8px;
-  background: #ff3b30;
+  right: 5px;
+  background: #ff5050;
   color: #fff;
   font-size: 10px;
   font-weight: bold;
   border-radius: 999px;
-  padding: 2px 6px;
+  padding: 2px;
+  min-width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: bounce 1s infinite;
 }

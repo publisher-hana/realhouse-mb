@@ -1,0 +1,134 @@
+.event-content {
+  padding: 16px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.event-stats-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 16px 16px 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  border: 1px solid var(--border-color, #e5e5e5);
+}
+
+.event-stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+.event-stats-row.sub {
+  margin-bottom: 0;
+}
+.event-stats-label {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+.event-stats-label .highlight {
+  color: #ff5050;
+  font-weight: 700;
+}
+.event-stats-label .normal {
+  color: #222;
+  font-weight: 600;
+}
+.event-rank {
+  font-size: 14px;
+  color: #222;
+  font-weight: 500;
+}
+.event-rank .highlight {
+  color: #ff5050;
+  font-weight: 700;
+}
+.event-timer {
+  font-size: 14px;
+  color: #222;
+  font-weight: 500;
+}
+.event-timer .blue {
+  color: #2281FF;
+  font-weight: 700;
+}
+
+.event-table {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border-color, #e5e5e5);
+  overflow: hidden;
+}
+.event-table-header {
+  display: flex;
+  background: #f8fafd;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+.event-table-title {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+}
+.event-table-title.red {
+  color: #ff5050;
+}
+.event-table-row {
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 14px;
+  background: #fff;
+}
+.event-table-row:last-child {
+  border-bottom: none;
+}
+.event-table-cell {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  color: #222;
+}
+.event-table-cell.red {
+  color: #ff5050;
+  font-weight: 600;
+}
+.event-table-cell.blue {
+  color: #2281FF;
+  font-weight: 600;
+}
+
+.event-action-btn {
+  width: 100%;
+  background: #00c4c4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 24px;
+  box-shadow: 0 2px 8px rgba(0,196,196,0.08);
+  transition: background 0.2s;
+}
+.event-action-btn:hover {
+  background: #00b0b0;
+}
+
+@media (max-width: 480px) {
+  .event-content {
+    padding: 8px;
+  }
+  .event-stats-card, .event-table {
+    padding: 12px 6px;
+  }
+  .event-action-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+} 

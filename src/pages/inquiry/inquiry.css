@@ -1,0 +1,75 @@
+.inquiry-content {
+  padding: 20px 0;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.inquiry-accordion {
+  background: #fff !important;
+  margin-bottom: 16px !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  box-shadow: none !important;
+  border-width: 1px !important;
+  overflow: hidden;
+}
+.inquiry-accordion.MuiPaper-elevation {
+  box-shadow: none !important;
+}
+
+.inquiry-summary {
+  display: flex;
+  align-items: flex-start;
+  min-height: unset;
+   padding-bottom: 20px;
+}
+.inquiry-summary .MuiAccordionSummary-content {
+  flex-direction: column;
+  margin: 0;
+}
+.inquiry-summary .MuiSvgIcon-root {
+  font-size: 32px !important;
+}
+.inquiry-summary-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  padding-bottom: 10px;
+}
+.inquiry-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+}
+.inquiry-status-badge {
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 2px 12px;
+  margin-left: 8px;
+  display: inline-block;
+}
+.inquiry-status-badge.pending {
+  background: #ff5050;
+  color: #fff;
+}
+.inquiry-status-badge.done {
+  background: #6ed36e;
+  color: #fff;
+}
+.inquiry-date {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.inquiry-details {
+  border-top: 1px solid var(--border-color);
+  padding: 0 20px 16px 20px;
+  font-size: 15px;
+  color: #222;
+  background: #fafbfc;
+}
+
