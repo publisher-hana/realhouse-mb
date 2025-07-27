@@ -19,6 +19,7 @@ import Favorite from './pages/favorite/Favorite';
 import Point from './pages/pay/Point';
 import PayCommission from './pages/pay/PayCommission';
 import Inquiry from './pages/inquiry/Inquiry';
+import NoticeList from './pages/inquiry/NoticeList';
 function App() {
   return (
     <>
@@ -41,6 +42,7 @@ function App() {
               <Route path='/point' element={<Point />} />
               <Route path='/pay-commission' element={<PayCommission />} />
               <Route path='/inquiry' element={<Inquiry />} />
+              <Route path='/notice-list' element={<NoticeList />} />
             </Routes>
           </div>
           <Footer />

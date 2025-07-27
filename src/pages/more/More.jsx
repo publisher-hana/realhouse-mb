@@ -78,7 +78,7 @@ const More = () => {
         <section className="section notices-section">
           <div className="section-header">
             <h3 className="section-title">공지사항</h3>
-            <button className="more-link">더보기&gt;</button>
+            <button className="more-link" onClick={() => navigate('/notice-list')}>더보기&gt;</button>
           </div>
           <div className="notices-list">
             {notices.map((notice) => (
