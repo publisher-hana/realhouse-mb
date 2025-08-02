@@ -1,13 +1,11 @@
 .inquiry-content {
-  padding: 20px 0;
   max-width: 480px;
   margin: 0 auto;
 }
 
 .inquiry-accordion {
   background: #fff !important;
-  margin-bottom: 16px !important;
-  border-bottom: 1px solid var(--border-color) !important;
+  border-bottom: 1px solid var(--border-color);
   box-shadow: none !important;
   border-width: 1px !important;
   overflow: hidden;
@@ -20,7 +18,8 @@
   display: flex;
   align-items: flex-start;
   min-height: unset;
-   padding-bottom: 20px;
+   padding-top: 16px !important;
+   padding-bottom: 16px !important;
 }
 .inquiry-summary .MuiAccordionSummary-content {
   flex-direction: column;

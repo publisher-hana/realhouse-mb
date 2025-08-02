@@ -24,36 +24,38 @@ const pointHistory = [
 const Point = () => {
   const navigate = useNavigate();
   return (
-    <div className="point-page">
+    <>
       <Header title="포인트" />
-      <div className="point-content">
-        {/* 포인트 잔액 카드 */}
-        <div className="point-balance-card">
-          <span className="point-balance-label">포인트</span>
-          <span className="point-balance-value">1,000,000원</span>
-        </div>
+      <div className="pay-content">
+        <div className="point-content">
+          {/* 포인트 잔액 카드 */}
+          <div className="pay-balance-card">
+            <span className="pay-balance-label">포인트</span>
+            <span className="pay-balance-value">1,000,000원</span>
+          </div>
 
-        {/* 포인트 내역 */}
-        <div className="point-history-section">
-          <div className="point-history-title">포인트 내역</div>
-          <div className="point-history-list">
-            {pointHistory.map((item) => (
-              <div className="point-history-item" key={item.id}>
-                <div className="point-history-row">
-                  <span className="point-history-desc">{item.desc}</span>
-                  <span className="point-history-date">{item.date}</span>
+          {/* 포인트 내역 */}
+          <div className="pay-section">
+            <div className="pay-section-title">포인트 내역</div>
+            <div className="point-history-list">
+              {pointHistory.map((item) => (
+                <div className="point-history-item" key={item.id}>
+                  <div className="point-history-row">
+                    <span className="point-history-desc">{item.desc}</span>
+                    <span className="point-history-date">{item.date}</span>
+                  </div>
+                  <div className="point-history-row">
+                    {item.minus && <span className="point-history-minus">{item.minus}</span>}
+                    {item.plus && <span className="point-history-plus">{item.plus}</span>}
+                    <span className="point-history-remain">{item.remain}</span>
+                  </div>
                 </div>
-                <div className="point-history-row">
-                  {item.minus && <span className="point-history-minus">{item.minus}</span>}
-                  {item.plus && <span className="point-history-plus">{item.plus}</span>}
-                  <span className="point-history-remain">{item.remain}</span>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

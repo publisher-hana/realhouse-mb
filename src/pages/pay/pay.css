@@ -165,3 +165,60 @@
 .pay-footer-btn.cancel:hover {
   background: #e5f6f6;
 }
+
+/* 포인트 내역 카드 스타일 */
+.pay-section.point-history-section {
+  margin-top: 18px;
+  padding-bottom: 0;
+}
+
+.point-history-list {
+  padding: 0 20px;
+}
+
+.point-history-item {
+  padding: 18px 0 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.point-history-item:last-child {
+  border-bottom: none;
+}
+
+.point-history-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.point-history-desc {
+  font-size: 15px;
+  color: #222;
+  font-weight: 500;
+}
+
+.point-history-date {
+  font-size: 13px;
+  color: #999;
+  font-weight: 400;
+}
+
+.point-history-plus {
+  font-size: 16px;
+  color: #ff5050;
+  font-weight: 600;
+}
+
+.point-history-minus {
+  font-size: 16px;
+  color: var(--c-blue);
+  font-weight: 600;
+}
+
+
+.point-history-remain {
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+}
